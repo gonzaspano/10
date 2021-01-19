@@ -1,0 +1,122 @@
+.subtitle {
+    color: grey;
+    font-size: 150px;
+}
+#subtitleSpan {
+    color:white;
+}
+#subtitleSpan2 {
+    font-size: 120px;
+    color: white;
+    font-family: dolce-vita-light;
+}
+.container-subsubtitle {
+    margin-top: 20px;
+}
+.subsubtitle {
+    color: white;
+    font-size: 50px;
+}
+.subtitleYear {
+    color: white;
+    font-size: 150px;
+}
+.subtitle3 {
+    text-align: end;
+    font-size: 50px;
+    color: white;
+}
+#subtitle3Span {
+    font-family: dolce-vita-light;
+}
+.subtitle4 {
+    font-size: 70px;
+    color: white;
+}
+#subtitle4Span {
+    font-family: dolce-vita-light;
+}
+#goldenBallContainer {
+    margin-top: 100px;
+
+}
+.imgTemp1 {
+    width: 100%;
+    height: 100%;
+}
+.container-text {
+    margin-top: 100px;
+}
+.textTemp {
+    color: white;
+    font-family: engraversGothic;
+    font-size: 30px;
+}
+
+.imgTemp2 {
+    margin-top: 50px;
+    float: right;
+    width: 400px;
+    height: 500px;
+}
+.container-imgTemp3 {
+    margin-top: 100px;
+    .imgTemp3 {
+        width: 100%;
+    }
+}
+.linesCataluniaRed {
+    background-color: red;
+    height: 5px;
+    width: 100%;
+}
+.linesCataluniaYellow {
+    background-color: yellow;
+    height: 5px;
+    width: 100%;
+}
+
+.container-trophies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 30px;
+    .trophy {
+        margin-right: 30px;
+        .imgTrophy {
+            width: 50px;
+        }
+        .imgTrophy2 {
+            width: 35px;
+        }
+        .imgTrophy2:hover ~ .textTrophy {
+            opacity: 100%;
+        }
+        .imgTrophy:hover ~ .textTrophy {
+            opacity: 100%;
+        }
+        .textTrophy {
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            opacity: 0%;
+            margin-bottom: 0px;
+            margin-top: 5px
+        }
+    }
+}
+.container-record {
+    margin-top: 120px;
+}
+.container-sexta-bota {
+    display: flex;
+    .subtitle4 {
+        font-size: 120px;
+        margin-right: 25px;
+        font-family: dolce-vita-light;
+    }
+    #subtitle4Span {
+        font-size: 60px;
+    }
+}

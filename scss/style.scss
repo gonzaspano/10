@@ -1,0 +1,222 @@
+@import "fonts";
+@import "goldenball";
+
+$blueColor: #0D47A1;
+$redColor: #9B0000;
+
+/* //////////////////////////////////////////// */
+* {
+    padding: 0px;
+    margin: 0px;
+    line-height: 1;
+}
+
+.body {
+    background-color: black;
+    font-family: dolce-vita;
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    .container-main {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url("/images/messiprincipal.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 900px;
+        width: 100%;
+        .container-title {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            .title {
+                font-family: adamLight;
+                color: white;
+                font-size: 130px;
+                text-align: center;
+                line-height: normal;
+            }
+            .mainUnderline {
+                width: 500px;
+                height: 5px;
+                background-color: white;
+            }
+        }
+        .subtitle-main {
+            h2 {
+                font-family: adamLight;
+                color: white;
+                font-size: 60px;
+                text-align: center;
+            }
+        }
+        .nav {
+            background: none;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            a {
+                text-decoration: none;
+            }
+            p {
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            font-family: engraversGothic;
+            }
+            p:hover {
+                transition: 0.5s;
+                color: $redColor;
+            }
+        }
+    }
+
+    /* VIDEO */
+     #videoB-W {
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    } 
+
+    /* IMAGEN Y FRASES */
+    .imgFrases {
+        background-image: url("/images/messiportada.png");
+        height: 5000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .messiQuote {
+        margin-top: 230px;
+        color: white;
+        font-size: 25px;
+    }
+
+    /* IMAGENES DORSAL */
+    .imgDorsal {
+        width: 300px;
+        height: 450px;
+    }
+    .imgDorsal:hover {
+        border: 1px solid $blueColor;
+        transition: 0.5s;
+    }
+    .imgDorsal:hover ~ .textImgDorsal{
+        transition: 1s;
+        opacity: 100%;
+    }
+    .textImgDorsal {
+        color: white;
+        opacity: 0%;
+        text-align: center;
+        font-family: adamBold;
+        margin-top: 25px
+    }
+    .textYearDorsal {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+
+    /* LINEAS VERTICALES */
+    .line-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        .redLine {
+            position: absolute;
+            height: 10px;
+            width: 50px;
+            background-color: #9B0000;
+            opacity: 50%;
+            margin-right: 110px;
+        }
+        .blueLine{
+            position: absolute;
+            height: 10px;
+            width: 50px;
+            background-color: $blueColor;
+            opacity: 50%;
+            margin-right: 55px;
+        }
+        @media (max-width: 800px) {
+            .redLine .blueLine{
+                display: none;
+            }
+          }
+    }
+    .gradientTransition {
+        height: 150px;
+        background-color: black;
+    }
+
+    /* POSICION EN EL CAMPO */
+    .position-container {
+/*         background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(/images/messiposition.png);
+ */        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(/images/messiposition.png);
+        //background-image: url(/images/messiposition.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 25px;
+        .position-title {
+            margin-top:100px;
+            color: white;
+            font-size: 50px;
+        }
+        .videoPosition {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            video {
+                width: 100%;
+            }
+        }
+        .infoPosition {
+            margin-top: 100px;
+            .subtitleAccordion {
+                color: white;
+                text-align: center;
+                font-size: 40px;
+                margin-bottom: 25px;
+            }
+            .accordion .card {
+                margin-bottom: 10px;
+                background-color: black;
+                .titleCollapse {
+                    color: white
+                }
+            }
+            .textCollapse {
+                color: white
+            }
+            .btn {
+                border: 0px;
+                .containerTitleCollapse {
+                    display: flex;
+                    justify-content: center;
+                    .arrowIcon {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .imgBody {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-footer {
+        text-align: center;
+        color: white
+    }
+
+
+}

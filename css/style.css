@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "dolce-vita";
+  src: url(/fonts/dolce_vita/Dolce\ Vita.ttf)
+}
+@font-face {
+  font-family: "dolce-vita-light";
+  src: url(/fonts/dolce_vita/Dolce\ Vita\ Light.ttf)
+}
+@font-face {
+  font-family: "dolce-vita-heavy-bold";
+  src: url(/fonts/dolce_vita/Dolce\ Vita\ Heavy\ Bold.ttf)
+}
+/* //////////////////////////////////////////// */
+
+.body {
+  background-color: black;
+}
+
+/* TITULO Y SUBTITULOS */
+.subtitle {
+  color: white;
+  text-align: center;
+
+}
+
+/* NAV */
+.nav {
+  background: none;
+}
+.nav p {
+  color: white;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+
+/* VIDEO */
+#videoB-W {
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+} 
+
+/* IMAGEN Y FRASES */
+.portada {
+  background-image: url("/images/messiportada.png");
+  height: 5000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.messiQuote {
+  font-family: dolce-vita;
+  margin-top: 230px;
+  color: white;
+  font-size: 25px;
+}
+
+/* IMAGENES DORSAL */
+.imgDorsal {
+  width: 300px;
+  height: 450px;
+}
+.imgDorsal:hover {
+  border-left: 10px solid #9B0000;
+  border-bottom: 10px solid #9B0000;
+  transition: 0.5s;
+}
+.imgDorsal:hover ~ .textImgDorsal{
+  transition: 1s;
+  opacity: 100%;
+}
+.textImgDorsal {
+  color: white;
+  opacity: 0%;
+  text-align: center;
+}
+/* LINEAS VERTICALES */
+.line-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+.redLine {
+  position: absolute;
+  height: 10px;
+  width: 50px;
+  background-color: #9B0000;
+  opacity: 50%;
+}
+.blueLine{
+  position: absolute;
+  height: 10px;
+  width: 50px;
+  background-color: #0D47A1;
+  opacity: 50%;
+  margin-right: 55px;
+}
+
+/* POSICION EN EL CAMPO */
+.position-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.videoPosition {
+  margin-top: 50px
+}
+.infoPosition {
+  margin-top: 50px
+}
+.accordion .card {
+  background-color: black;
+}
+.titleCollapse, .textCollapse {
+  color: white
+}
+.btn {
+  border: 0px
+}

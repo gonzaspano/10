@@ -1,0 +1,301 @@
+@font-face {
+  font-family: "dolce-vita";
+  src: url(/fonts/dolce_vita/DolceVita.ttf); }
+
+@font-face {
+  font-family: "dolce-vita-heavy-bold";
+  src: url(/fonts/dolce_vita/DolceVitaHeavyBold.ttf); }
+
+@font-face {
+  font-family: "dolce-vita-light";
+  src: url(/fonts/dolce_vita/DolceVitaLight.ttf); }
+
+@font-face {
+  font-family: "adamLight";
+  src: url(/fonts/Adam/Adam-Light.ttf); }
+
+@font-face {
+  font-family: "adamBold";
+  src: url(/fonts/Adam/Adam-Bold.ttf); }
+
+@font-face {
+  font-family: "adamMedium";
+  src: url(/fonts/Adam/Adam-Medium.ttf); }
+
+@font-face {
+  font-family: "engraversGothic";
+  src: url(/fonts/Engravers_Gothic_BT/engraversGothicBt.ttf); }
+
+.subtitle {
+  color: grey;
+  font-size: 150px; }
+
+#subtitleSpan {
+  color: white; }
+
+#subtitleSpan2 {
+  font-size: 120px;
+  color: white;
+  font-family: dolce-vita-light; }
+
+.container-subsubtitle {
+  margin-top: 20px; }
+
+.subsubtitle {
+  color: white;
+  font-size: 50px; }
+
+.subtitleYear {
+  color: white;
+  font-size: 150px; }
+
+.subtitle3 {
+  text-align: end;
+  font-size: 50px;
+  color: white; }
+
+#subtitle3Span {
+  font-family: dolce-vita-light; }
+
+.subtitle4 {
+  font-size: 70px;
+  color: white; }
+
+#subtitle4Span {
+  font-family: dolce-vita-light; }
+
+#goldenBallContainer {
+  margin-top: 100px; }
+
+.imgTemp1 {
+  width: 100%;
+  height: 100%; }
+
+.container-text {
+  margin-top: 100px; }
+
+.textTemp {
+  color: white;
+  font-family: engraversGothic;
+  font-size: 30px; }
+
+.imgTemp2 {
+  margin-top: 50px;
+  float: right;
+  width: 400px;
+  height: 500px; }
+
+.container-imgTemp3 {
+  margin-top: 100px; }
+  .container-imgTemp3 .imgTemp3 {
+    width: 100%; }
+
+.linesCataluniaRed {
+  background-color: red;
+  height: 5px;
+  width: 100%; }
+
+.linesCataluniaYellow {
+  background-color: yellow;
+  height: 5px;
+  width: 100%; }
+
+.container-trophies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 30px; }
+  .container-trophies .trophy {
+    margin-right: 30px; }
+    .container-trophies .trophy .imgTrophy {
+      width: 50px; }
+    .container-trophies .trophy .imgTrophy2 {
+      width: 35px; }
+    .container-trophies .trophy .imgTrophy2:hover ~ .textTrophy {
+      opacity: 100%; }
+    .container-trophies .trophy .imgTrophy:hover ~ .textTrophy {
+      opacity: 100%; }
+    .container-trophies .trophy .textTrophy {
+      text-align: center;
+      color: white;
+      font-size: 10px;
+      opacity: 0%;
+      margin-bottom: 0px;
+      margin-top: 5px; }
+
+.container-record {
+  margin-top: 120px; }
+
+.container-sexta-bota {
+  display: flex; }
+  .container-sexta-bota .subtitle4 {
+    font-size: 120px;
+    margin-right: 25px;
+    font-family: dolce-vita-light; }
+  .container-sexta-bota #subtitle4Span {
+    font-size: 60px; }
+
+/* //////////////////////////////////////////// */
+* {
+  padding: 0px;
+  margin: 0px;
+  line-height: 1; }
+
+.body {
+  background-color: black;
+  font-family: dolce-vita;
+  /* VIDEO */
+  /* IMAGEN Y FRASES */
+  /* IMAGENES DORSAL */
+  /* LINEAS VERTICALES */
+  /* POSICION EN EL CAMPO */ }
+  .body p {
+    margin-bottom: 0px; }
+  .body .container-main {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), black), url("/images/messiprincipal.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%; }
+    .body .container-main .container-title {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center; }
+      .body .container-main .container-title .title {
+        font-family: adamLight;
+        color: white;
+        font-size: 130px;
+        text-align: center;
+        line-height: normal; }
+      .body .container-main .container-title .mainUnderline {
+        width: 500px;
+        height: 5px;
+        background-color: white; }
+    .body .container-main .subtitle-main h2 {
+      font-family: adamLight;
+      color: white;
+      font-size: 60px;
+      text-align: center; }
+    .body .container-main .nav {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center; }
+      .body .container-main .nav a {
+        text-decoration: none; }
+      .body .container-main .nav p {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        font-family: engraversGothic; }
+      .body .container-main .nav p:hover {
+        transition: 0.5s;
+        color: #9B0000; }
+  .body #videoB-W {
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%; }
+  .body .imgFrases {
+    background-image: url("/images/messiportada.png");
+    height: 5000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  .body .messiQuote {
+    margin-top: 230px;
+    color: white;
+    font-size: 25px; }
+  .body .imgDorsal {
+    width: 300px;
+    height: 450px; }
+  .body .imgDorsal:hover {
+    border: 1px solid #0D47A1;
+    transition: 0.5s; }
+  .body .imgDorsal:hover ~ .textImgDorsal {
+    transition: 1s;
+    opacity: 100%; }
+  .body .textImgDorsal {
+    color: white;
+    opacity: 0%;
+    text-align: center;
+    font-family: adamBold;
+    margin-top: 25px; }
+  .body .textYearDorsal {
+    text-align: center;
+    color: white;
+    font-size: 40px; }
+  .body .line-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end; }
+    .body .line-container .redLine {
+      position: absolute;
+      height: 10px;
+      width: 50px;
+      background-color: #9B0000;
+      opacity: 50%;
+      margin-right: 110px; }
+    .body .line-container .blueLine {
+      position: absolute;
+      height: 10px;
+      width: 50px;
+      background-color: #0D47A1;
+      opacity: 50%;
+      margin-right: 55px; }
+    @media (max-width: 800px) {
+      .body .line-container .redLine .blueLine {
+        display: none; } }
+  .body .gradientTransition {
+    height: 150px;
+    background-color: black; }
+  .body .position-container {
+    /*         background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(/images/messiposition.png);
+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), black), url(/images/messiposition.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 25px; }
+    .body .position-container .position-title {
+      margin-top: 100px;
+      color: white;
+      font-size: 50px; }
+    .body .position-container .videoPosition {
+      margin-top: 100px;
+      margin-bottom: 100px; }
+      .body .position-container .videoPosition video {
+        width: 100%; }
+    .body .position-container .infoPosition {
+      margin-top: 100px; }
+      .body .position-container .infoPosition .subtitleAccordion {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 25px; }
+      .body .position-container .infoPosition .accordion .card {
+        margin-bottom: 10px;
+        background-color: black; }
+        .body .position-container .infoPosition .accordion .card .titleCollapse {
+          color: white; }
+      .body .position-container .infoPosition .textCollapse {
+        color: white; }
+      .body .position-container .infoPosition .btn {
+        border: 0px; }
+        .body .position-container .infoPosition .btn .containerTitleCollapse {
+          display: flex;
+          justify-content: center; }
+          .body .position-container .infoPosition .btn .containerTitleCollapse .arrowIcon {
+            width: 50px; }
+  .body .imgBody {
+    width: 100%;
+    height: 100%; }
+  .body .text-footer {
+    text-align: center;
+    color: white; }
